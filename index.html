@@ -12,6 +12,7 @@
     <header> <!--foto aqui-->
         <h1>Cecilia Montes</h1>
         <p>Estudiante en ESPOL | cimontes@espol.edu.ec | 0979177788</p>
+        <img src="https://picsum.photos/300/300" alt="Foto de perfil de ejemplo" width="300" height="300">
     </header>
 
     <nav>
@@ -22,28 +23,155 @@
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#contactame">Contactame</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
         </ul>
     </nav>
     <main>
         <section id="resumen">
             <h2>Resumen</h2>
             <p>Breve descripción de tus habilidades y experiencia.</p>
+            <p>Hola soy tal y tal, ... si quieres ver mis proyectos visita mi perfil de <a
+                    href="https://github.com/cimontesm">github.</a></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/An7ZD-s6aHY"
+                title="Video de presentación profesional" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
         </section>
         <section id="experiencia">
             <h2>Experiencia</h2>
+            <ol>
+                <li>Certificación en Desarrollo Web Full Stack</li>
+                <li>Diplomado en Gestión de Proyectos Ágiles</li>
+                <li>Curso avanzado de JavaScript y React</li>
+            </ol>
         </section>
         <section id="educacion">
             <h2>Educación</h2>
             <p>Escuela Superior Politecnica del Litoral (ESPOL) 2022-2027</p> <!--mapa de espol-->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.4105352920088!2d-79.96814293054137!3d-2.1441547999999964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses-419!2sec!4v1696617924317!5m2!1ses-419!2sec"
+                width="65%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
         <section id="habilidades">
             <h2>Habilidades</h2>
+            <ul>
+                <li>Desarrollo de software backend</li>
+                <li>Trabajo en equipo y liderazgo</li>
+                <li>Gestión de proyectos y planificación</li>
+                <li>Optimización de procesos y mejora continua</li>
+            </ul>
+            <h3>Idiomas</h3>
+            <table style="border-collapse: collapse; width: 50%; " align="center">
+                <thead align="center">
+                    <tr>
+                        <th>Idioma</th>
+                        <th>Nivel</th>
+                        <th>Certificación</th>
+                    </tr>
+                </thead>
+                <tbody align="center">
+                    <tr>
+                        <td>Español</td>
+                        <td>Nativo</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Inglés</td>
+                        <td>Avanzado</td>
+                        <td>TOEFL: 110/120</td>
+                    </tr>
+                    <tr>
+                        <td>Francés</td>
+                        <td>Básico</td>
+                        <td>DELF B2</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
         </section>
         <section id="proyectos">
             <h2>Proyectos</h2>
         </section>
         <section id="contactame">
             <h2>Contactame</h2>
+            <form action="/enviar-formulario" method="post">
+                <!-- Campo de texto en una línea -->
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <!-- Lista desplegable -->
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo">
+                    <option value="consulta">Consulta general</option>
+                    <option value="entrevista">Solicitud de entrevista</option>
+                    <option value="colaboracion">Propuesta de colaboración</option>
+                </select>
+
+                <!-- Opciones de selección única (radio buttons) -->
+                <fieldset>
+                    <legend>¿Prefiere ser contactado por?</legend>
+                    <label>
+                        <input type="radio" name="contacto" value="email" checked>
+                        Correo electrónico
+                    </label>
+                    <label>
+                        <input type="radio" name="contacto" value="telefono">
+                        Teléfono
+                    </label>
+                </fieldset>
+
+                <!-- Selección múltiple -->
+                <label for="intereses">Áreas de interés:</label>
+                <select id="intereses" name="intereses[]" multiple size="4">
+                    <option value="desarrollo">Desarrollo web</option>
+                    <option value="diseno">Diseño UX/UI</option>
+                    <option value="gestion">Gestión de proyectos</option>
+                    <option value="datos">Análisis de datos</option>
+                </select>
+
+                <!-- Área de texto -->
+                <label for="mensaje">Mensaje adicional:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="40"
+                    placeholder="Escriba aquí su mensaje..."></textarea>
+
+                <!-- Botón de envío -->
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="testimonios">
+            <h2>Testimonios</h2>
+
+            <article class="testimonio">
+                <blockquote>
+                    "Una de las mejores colaboraciones profesionales que he tenido."
+                </blockquote>
+                <p><strong>Juan Pérez</strong>, Director de Marketing en XYZ Corp.</p>
+                <p>Juan ha trabajado junto a mí durante dos años en diversos proyectos de marketing digital. Su enfoque
+                    estratégico y capacidad para tomar decisiones acertadas me han permitido siempre entregar resultados
+                    sobresalientes.</p>
+            </article>
+
+            <article class="testimonio">
+                <blockquote>
+                    "Un profesional con gran capacidad para resolver problemas y ofrecer soluciones efectivas."
+                </blockquote>
+                <p><strong>Ana Martínez</strong>, Gerente de Producto en Tech Innovations</p>
+                <p>Con Ana colaboré en la creación de productos innovadores, donde su habilidad para coordinar equipos
+                    multidisciplinarios fue clave en el éxito de nuestros lanzamientos.</p>
+            </article>
+
+            <article class="testimonio">
+                <blockquote>
+                    "Siempre superó nuestras expectativas en cada proyecto."
+                </blockquote>
+                <p><strong>Carlos Gómez</strong>, CEO en Global Solutions</p>
+                <p>Trabajé con Carlos en múltiples proyectos de desarrollo de software. Su habilidad técnica y ética de
+                    trabajo siempre fueron admiradas, lo que hizo que nuestra colaboración fuera muy exitosa.</p>
+            </article>
         </section>
     </main>
     <footer>
