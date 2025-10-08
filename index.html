@@ -5,14 +5,20 @@
     <title>Mi Currículum Vitae</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
     <header> <!--foto aqui-->
         <h1>Cecilia Montes</h1>
         <p>Estudiante en ESPOL | cimontes@espol.edu.ec | 0979177788</p>
-        <img src="https://picsum.photos/300/300" alt="Foto de perfil de ejemplo" width="300" height="300">
+        <img src="https://picsum.photos/300/300" alt="Foto de perfil de ejemplo" width="300" height="300" id="photo">
     </header>
 
     <nav>
@@ -28,7 +34,7 @@
     </nav>
     <main>
         <section id="resumen">
-            <h2>Resumen</h2>
+            <h2 class="subtitle">Resumen</h2>
             <p>Breve descripción de tus habilidades y experiencia.</p>
             <p>Hola soy tal y tal, ... si quieres ver mis proyectos visita mi perfil de <a
                     href="https://github.com/cimontesm">github.</a></p>
@@ -39,15 +45,15 @@
             </iframe>
         </section>
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2 class="subtitle">Experiencia</h2>
             <ol>
-                <li>Certificación en Desarrollo Web Full Stack</li>
-                <li>Diplomado en Gestión de Proyectos Ágiles</li>
-                <li>Curso avanzado de JavaScript y React</li>
+                <li>Certificación en Desarrollo Backend</li>
+                <li>Certificado de ciencia de datos</li>
+                <li>Curso avanzado de JavaScript</li>
             </ol>
         </section>
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <p>Escuela Superior Politecnica del Litoral (ESPOL) 2022-2027</p> <!--mapa de espol-->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.4105352920088!2d-79.96814293054137!3d-2.1441547999999964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses-419!2sec!4v1696617924317!5m2!1ses-419!2sec"
@@ -56,7 +62,7 @@
             </iframe>
         </section>
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
             <ul>
                 <li>Desarrollo de software backend</li>
                 <li>Trabajo en equipo y liderazgo</li>
@@ -94,10 +100,10 @@
 
         </section>
         <section id="proyectos">
-            <h2>Proyectos</h2>
+            <h2 class="subtitle">Proyectos</h2>
         </section>
         <section id="contactame">
-            <h2>Contactame</h2>
+            <h2 class="subtitle">Contactame</h2>
             <form action="/enviar-formulario" method="post">
                 <!-- Campo de texto en una línea -->
                 <label for="nombre">Nombre completo:</label>
@@ -143,7 +149,7 @@
             </form>
         </section>
         <section id="testimonios">
-            <h2>Testimonios</h2>
+            <h2 class="subtitle">Testimonios</h2>
 
             <article class="testimonio">
                 <blockquote>
