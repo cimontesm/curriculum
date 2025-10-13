@@ -17,7 +17,7 @@ h1 {
 }
 
 .subtitle {
-    color: rgba(98, 67, 168, 0.89);
+    color: #77567A;
     text-transform: uppercase;
 }
 
@@ -28,10 +28,37 @@ footer p {
 
 nav>ul {
     list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+section>form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+#testimonios {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    row-gap: 1rem;
+    column-gap: 1rem;
+
+    text-align: center;
+}
+
+#testimonios>h2 {
+    grid-column: 1 / -1;
 }
 
 section {
-    border: 0.2pt solid #a986fa;
+    border: 0.2pt solid #debac0;
     margin: 4px 2px 8px 2px;
     padding: 1.5% 0.8%;
     margin-bottom: 1.2rem;
@@ -39,7 +66,9 @@ section {
     -moz-border-radius: 5px;
     border-radius: 5px;
 
-    -webkit-box-shadow: 3px 3px 1px 0px rgba(195, 93, 255, 0.678);
-    -moz-box-shadow: 3px 3px 1px 0px rgba(195, 93, 255, 0.678);
-    box-shadow: 3px 3px 1px 0px rgba(195, 93, 255, 0.678);
+    -webkit-box-shadow: 3px 3px 1px 0px rgba(153, 92, 189, 0.678);
+    -moz-box-shadow: 3px 3px 1px 0px rgba(153, 92, 189, 0.678);
+    box-shadow: 3px 3px 1px 0px rgba(153, 92, 189, 0.678);
+
+
 }
